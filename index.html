@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="static/sass/css/style.css">
+    <title>Code editor</title>
+  </head>
+<body>
+  <div class="editor">
+    <div class="menu">
+      <button id="runButton"><i class="fa-solid fa-play"></i></button>
+      <button id="saveButton"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+    <div class="filetype">
+      <div class="editor-tab" id="html-tab"><i class="fa-brands fa-html5"></i></div>
+      <div class="editor-tab" id="css-tab"><i class="fa-brands fa-css3-alt"></i></div>
+      <div class="editor-tab" id="js-tab"><i class="fa-brands fa-js"></i></div>
+    </div>
+    <div class="editor-container">
+      <textarea id="codeHTML" class="hidden"></textarea>
+      <textarea id="codeCSS" class="hidden"></textarea>
+      <textarea id="codeJS" class="hidden"></textarea>
+    </div>
+  </div>
+  <div class="output">
+    <iframe id="output"></iframe>
+  </div>
+  <script src="https://kit.fontawesome.com/95173b3ff4.js" crossorigin="anonymous"></script>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
+
